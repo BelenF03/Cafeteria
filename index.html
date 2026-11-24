@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aroma & Grano | Cafetería de Especialidad</title>
+  <meta name="description" content="Café de especialidad, accesorios y repostería artesanal." />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/views.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <!-- NAVBAR (render dinámico) -->
+  <header id="navbar-root"></header>
+
+  <!-- CONTENEDOR PRINCIPAL SPA -->
+  <main id="app"></main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <i class="fa-solid fa-mug-hot"></i>
+        <span>Aroma & Grano</span>
+        <p>Café de especialidad hecho con amor.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Explorar</h4>
+        <a id="tienda-a" href="#/tienda">Tienda</a>
+        <a id="cuenta-a" href="#/cuenta">Mi cuenta</a>
+        <a id="pedidos-a" href="#/pedidos">Mis pedidos</a>
+      </div>
+      <div class="footer-links">
+        <h4>Síguenos</h4>
+        <div class="socials">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Aroma & Grano — Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <!-- DRAWER DEL CARRITO -->
+  <div id="cart-root"></div>
+
+  <!-- CONTENEDOR DE TOASTS -->
+  <div id="toast-root" class="toast-container"></div>
+
+  <!-- MODAL GLOBAL -->
+  <div id="modal-root"></div>
+
+  <!-- SCRIPT PRINCIPAL (módulo) -->
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
